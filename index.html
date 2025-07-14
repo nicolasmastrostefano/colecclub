@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Configuración básica del documento -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colecclub | Viví la emoción de coleccionar</title>
+
+    <!-- Tipografía desde Google Fonts -->
+     <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=League+Gothic&display=swap" rel="stylesheet">
+
+    <!-- Framework CSS de Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- NAVBAR: Menú de navegación fijo superior -->
+<nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container">
+    <!-- Logo o nombre del sitio -->
+    <a class="navbar-brand gothic" href="#">
+    COLEC<span class="text-white">CLUB</span>
+    </a>
+    <!-- Botón para mostrar menú en mobile -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <!-- Ítems del menú -->
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link active" href="#">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" href="#nosotros">Nosotros</a></li>
+        <li class="nav-item"><a class="nav-link" href="#experiencias">Experiencias</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- /NAVBAR -->
+
+<!-- HERO: Sección de portada con llamado a la acción -->
+<section class="hero-section d-flex align-items-center">
+  <div class="container">
+    <div class="row align-items-center">
+      <!-- Texto principal -->
+      <div class="col-lg-6">
+        <h1 class="h1-custom">
+          <span class="text-primary">LA CULTURA POP,</span><br>
+          <span class="text-white">AL ALCANCE DE TU MANO</span>
+        </h1>
+        <p class="p-white">Suscribite a Colecclub y recibí todos los meses tus productos favoritos de la cultura pop. <b>¡Viví la emoción de coleccionar!</b></p>
+        <div class="d-flex gap-3 mt-4">
+          <a href="#" class="btn btn-dark">SUSCRIBITE AHORA</a>
+        </div>
+      </div>
+      <!-- Imagen destacada -->
+      <div class="col-lg-6 text-center">
+        <img src="assets/hero.png" class="img-fluid img-rounded" alt="Imagen Hero">
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /HERO -->
+
+<!-- CÓMO FUNCIONA COLECCLUB -->
+<section class="section-spacing container text-center py-5">
+  <h2 class="h2-custom-iconos">¿CÓMO FUNCIONA <span class="text-primary">COLECCLUB</span>?</h2>
+  <div class="row">
+    <!-- Beneficio 1 -->
+    <div class="col-md-4 mb-4">
+    <img src="assets/plan.png" alt="Elegí tu plan" class="mb-3" style="width: 96px; height: auto;">
+    <h4>Elegí tu plan</h4>
+    <p class="p-custom">Elegí el tipo de plan que más se adapte a lo que necesites y quieras coleccionar.</p>
+</div>
+    <!-- Beneficio 2 -->
+    <div class="col-md-4 mb-4">
+      <img src="assets/coleccion.png" alt="Coleccioná" class="mb-3" style="width: 96px; height: auto;">
+      <h4>Coleccioná</h4>
+      <p class="p-custom">Recibí merchandising oficial de tus sagas favoritas en la puerta de tu casa.</p>
+    </div>
+    <!-- Beneficio 3 -->
+    <div class="col-md-4 mb-4">
+      <img src="assets/swap.png" alt="Usá GeekSwap" class="mb-3" style="width: 96px; height: auto;">
+      <h4>Usá GeekSwap</h4>
+      <p class="p-custom">Aprovechá y canjeá tus cómics y Funkos con nuestra comunidad.</p>
+    </div>
+  </div>
+</section>
+<!-- CÓMO FUNCIONA COLECCLUB -->
+
+<!-- SECCIÓN B: Imagen izquierda, texto derecha -->
+<section id=nosotros class="section-spacing container">
+  <div class="row align-items-center">
+    <!-- Columna de imagen -->
+    <div class="col-lg-6 text-center mb-4 mb-lg-0">
+      <img src="assets/porquenosotros.png" class="img-fluid img-rounded" alt="Imagen ilustrativa">
+    </div>
+    <!-- Columna de texto -->
+<div class="col-lg-6">
+  <h2 class="h2-custom">¿POR QUÉ <span class="text-primary">NOSOTROS</span>?</h2>
+  <p class="p-custom">Porque con nuestra suscripción mensual, <strong>cada caja es más que solo merch:</strong></p>
+  <ul class="list-unstyled text-start" style="max-width: 100%;">
+    <li class="d-flex align-items-start mb-2">
+      <i class="bi bi-check-circle-fill text-primary me-2"></i>
+      <span><strong>Temáticas actuales</strong> basadas en los estrenos del mes: Marvel, Star Wars, Anime y más.</span>
+    </li>
+    <li class="d-flex align-items-start mb-2">
+      <i class="bi bi-check-circle-fill text-primary me-2"></i>
+      <span><strong>Ítems exclusivos y licenciados:</strong> figuras, cómics y piezas que no vas a conseguir en otro lado.</span>
+    </li>
+    <li class="d-flex align-items-start mb-2">
+      <i class="bi bi-check-circle-fill text-primary me-2"></i>
+      <span><strong>Descuentos reales:</strong> 10% OFF en tiendas de cómics y gaming partners.</span>
+    </li>
+    <li class="d-flex align-items-start">
+      <i class="bi bi-check-circle-fill text-primary me-2"></i>
+      <span><strong>Directo a tu puerta,</strong> todos los meses.</span>
+    </li>
+  </ul>
+</div>
+  </div>
+</section>
+<!-- SECCIÓN B: Imagen izquierda, texto derecha -->
+
+<!-- ¿QUÉ CONTIENEN NUESTRAS CAJAS? -->
+<section class="contenido-bg">
+  <div class="container text-center">
+  <h2 class="h2-custom text-white">¿QUÉ CONTIENEN NUESTRAS <span class="text-primary">CAJAS</span>?</h2>
+  <div class="row">
+    <!-- Cada columna es una tarjeta de servicio -->
+    <div class="col-md-3 mb-4">
+      <div class="card h-100">
+        <img src="assets/objetos-1.jpg" class="mb-3" alt="Servicio">
+        <h5>Funko Pop™</h5>
+        <p class="p-custom">Coleccioná las increíbles figuras de vinilo de tus personajes favoritos.</p>
+      </div>
+    </div>
+    <!-- Cada columna es una tarjeta de servicio -->
+    <div class="col-md-3 mb-4">
+      <div class="card h-100">
+        <img src="assets/objetos-2.jpg" class="mb-3" alt="Servicio">
+        <h5>Cómics exclusivos</h5>
+        <p class="p-custom">Con nuestras cajas, podés acceder a ediciones exclusivas de cómics.</p>
+      </div>
+    </div>
+    <!-- Cada columna es una tarjeta de servicio -->
+    <div class="col-md-3 mb-4">
+      <div class="card h-100">
+        <img src="assets/objetos-3.jpg" class="mb-3" alt="Servicio">
+        <h5>Pines esmaltados</h5>
+        <p class="p-custom">Coleccioná nuestros pines esmaltados, hechos a medida.</p>
+      </div>
+    </div>
+        <!-- Cada columna es una tarjeta de servicio -->
+    <div class="col-md-3 mb-4">
+      <div class="card h-100">
+        <img src="assets/objetos-4.jpg" class="mb-3" alt="Servicio">
+        <h5>Stickers y pósters</h5>
+        <p class="p-custom">Pegalos donde quieras y mostrale al mundo tu lado geek.</p>
+      </div>
+    </div>
+    </div>
+    <!-- ... repetir estructura para más servicios ... -->
+  </div>
+</section>
+<!-- ¿QUÉ CONTIENEN NUESTRAS CAJAS? -->
+
+<!-- SECCIÓN C: Texto izquierda, imagen derecha -->
+<section class="section-spacing container">
+  <div class="row align-items-center">
+    <!-- Columna de texto -->
+    <div class="col-lg-6">
+      <h2 class="h2-custom">CONECTÁ CON <span class="text-primary">GEEKSWAP</span></h2>
+      <p class="p-custom">¿Te tocó algo repetido? <strong>GeekSwap</strong> es nuestro sistema exclusivo para que puedas intercambiar ítems con otros miembros del club y completar tu colección. Subí lo que tenés, buscá lo que querés y conectá con otros fans. <strong>Disponible para todos los planes de suscripción.</strong></p>
+      <a href="#" class="btn btn-primary mt-3">CONOCÉ MÁS</a>
+    </div>
+    <!-- Columna de imagen -->
+    <div class="col-lg-6 text-center mt-4 mt-lg-0">
+      <img src="assets/geekswap.png" class="img-fluid img-rounded" alt="Imagen ilustrativa">
+    </div>
+  </div>
+</section>
+
+<!-- PLANES DE SUSCRIPCIÓN: Sección con 3 opciones destacadas -->
+<section id=experiencias class="experiencias-bg section-spacing text-center">
+  <div class="container">
+  <h2 class="h2-custom">ELEGÍ TU PROPIA EXPERIENCIA</h2>
+  
+  <div class="row mt-5">
+    <!-- Card: Plan Básico -->
+    <div class="col-md-4 mb-4">
+      <div class="card card-experiencias h-100">
+        <!-- Imagen ilustrativa -->
+        <img src="assets/origin.jpg" class="img-fluid img-rounded" alt="Experiencia Origin">
+
+        <!-- Título y precio -->
+        <h5 class="text-uppercase">Experiencia Origin</h5>
+        <p class="p-custom">Ideal para iniciarte en el multiverso del coleccionismo.</p>
+        <p class="display-6">$30.000,00 <span style="font-size: 0.4em; font-weight: 400; color: #505050;">/mes</span></p>
+
+        <!-- Lista de beneficios -->
+        <ul class="list-unstyled text-start mx-auto" style="max-width: 300px;">
+         <li><i class="bi bi-check-circle-fill text-primary me-2"></i> <strong>Cómic exclusivo</strong></li>
+         <li><i class="bi bi-check-circle-fill text-primary me-2"></i> <strong>Pack de stickers</strong></li>
+         <li><i class="bi bi-check-circle-fill text-primary me-2"></i> <strong>Pines esmaltados</strong></li>
+        <li><i class="bi bi-x-circle-fill text-dark me-2" style="opacity: 0.35;"></i> Figura exclusiva de Funko Pop™</li>
+        <li><i class="bi bi-x-circle-fill text-dark me-2" style="opacity: 0.35;"></i> Póster exclusivo</li>
+        <li><i class="bi bi-x-circle-fill text-dark me-2" style="opacity: 0.35;"></i> Prioridad en GeekSwap</li>
+        <li><i class="bi bi-x-circle-fill text-dark me-2" style="opacity: 0.35;"></i> Descuentos exclusivos</li>
+        <li><i class="bi bi-x-circle-fill text-dark me-2" style="opacity: 0.35;"></i> Envío prioritario</li>
+        </ul>
+
+        <!-- Botón CTA -->
+        <a href="#" class="btn btn-primary mt-3">SELECCIONAR EXPERIENCIA</a>
+      </div>
+    </div>
+
+    <!-- Card: Plan Básico -->
+    <div class="col-md-4 mb-4">
+      <div class="card card-experiencias h-100">
+        <!-- Imagen ilustrativa -->
+        <img src="assets/epic.jpg" class="img-fluid img-rounded" alt="Experiencia Epic">
+
+        <!-- Título y precio -->
+        <h5 class="text-uppercase">Experiencia Epic</h5>
+        <p class="p-custom">La experiencia completa para fans activos del universo geek.</p>
+        <p class="display-6">$60.000,00 <span style="font-size: 0.4em; font-weight: 400; color: #505050;">/mes</span></p>
+
+        <!-- Lista de beneficios -->
+        <ul class="list-unstyled text-start mx-auto" style="max-width: 300px;">
+         <li><i class="bi bi-check-circle-fill text-primary me-2"></i> <strong>Cómic exclusivo</strong></li>
+         <li><i class="bi bi-check-circle-fill text-primary me-2"></i> <strong>Pack de stickers</strong></li>
+         <li><i class="bi bi-check-circle-fill text-primary me-2"></i> <strong>Pines esmaltados</strong></li>
+        <li><i class="bi bi-check-circle-fill text-primary me-2"></i> <strong>Figura exclusiva de Funko Pop™</strong></li>
+        <li><i class="bi bi-check-circle-fill text-primary me-2"></i> <strong>Póster exclusivo</strong></li>
+        <li><i class="bi bi-x-circle-fill text-dark me-2" style="opacity: 0.35;"></i> Prioridad en GeekSwap</li>
+        <li><i class="bi bi-x-circle-fill text-dark me-2" style="opacity: 0.35;"></i> Descuentos exclusivos</li>
+        <li><i class="bi bi-x-circle-fill text-dark me-2" style="opacity: 0.35;"></i> Envío prioritario</li>
+        </ul>
+
+        <!-- Botón CTA -->
+        <a href="#" class="btn btn-primary mt-3">SELECCIONAR EXPERIENCIA</a>
+      </div>
+    </div>
+
+    <!-- Card: Plan Básico -->
+    <div class="col-md-4 mb-4">
+      <div class="card card-experiencias h-100">
+        <!-- Imagen ilustrativa -->
+        <img src="assets/legendary.jpg" class="img-fluid img-rounded" alt="Experiencia Legendary">
+
+        <!-- Título y precio -->
+        <h5 class="text-uppercase">Experiencia Legendary</h5>
+        <p class="p-custom">Para los que quieren todo y mucho más, esta es su experiencia ideal.</p>
+        <p class="display-6">$90.000,00 <span style="font-size: 0.4em; font-weight: 400; color: 505050;">/mes</span></p>
+        
+        <!-- Lista de beneficios -->
+        <ul class="list-unstyled text-start mx-auto" style="max-width: 300px;">
+         <li><i class="bi bi-check-circle-fill text-primary me-2"></i> <strong>Cómic exclusivo</strong></li>
+         <li><i class="bi bi-check-circle-fill text-primary me-2"></i> <strong>Pack de stickers</strong></li>
+         <li><i class="bi bi-check-circle-fill text-primary me-2"></i> <strong>Pines esmaltados</strong></li>
+        <li><i class="bi bi-check-circle-fill text-primary me-2"></i> <strong>Figura exclusiva de Funko Pop™</strong></li>
+        <li><i class="bi bi-check-circle-fill text-primary me-2"></i> <strong>Póster exclusivo</strong></li>
+        <li><i class="bi bi-check-circle-fill text-primary me-2"></i> <strong>Prioridad en GeekSwap</strong></li>
+        <li><i class="bi bi-check-circle-fill text-primary me-2"></i> <strong>Descuentos exclusivos</strong></li>
+        <li><i class="bi bi-check-circle-fill text-primary me-2"></i> <strong>Envío prioritario</strong></li>
+        </ul>
+
+        <!-- Botón CTA -->
+        <a href="#" class="btn btn-primary mt-3">SELECCIONAR EXPERIENCIA</a>
+      </div>
+    </div>
+ </div>
+  </div>
+</section>
+<!-- /PLANES DE SUSCRIPCIÓN -->
+
+<!-- FAQS: Preguntas frecuentes -->
+<section class="section-spacing container text-center">
+  <h2 class="h2-custom">PREGUNTAS <span class="text-primary">FRECUENTES</span></h2>
+  <div class="accordion mt-5" id="faqAccordion">
+
+    <!-- Pregunta 1 -->
+    <div class="accordion-item">
+      <p-custom class="accordion-header" id="headingOne">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+          ¿Puedo elegir la temática de mi caja?
+        </button>
+      </h2>
+      <div id="collapseOne" class="accordion-collapse collapse show">
+        <div class="accordion-body">
+          Las temáticas varían mes a mes según lanzamientos de cultura pop (Marvel, Star Wars, Anime, etc.). No se elige, ¡es parte de la sorpresa!
+        </div>
+      </div>
+    </div>
+
+    <!-- Pregunta 2 -->
+    <div class="accordion-item">
+      <p-custom class="accordion-header" id="headingTwo">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+          ¿Puedo cancelar mi suscripción cuando quiera?
+        </button>
+      </h2>
+      <div id="collapseTwo" class="accordion-collapse collapse">
+        <div class="accordion-body">
+          Sí, podés pausarla o cancelarla en cualquier momento desde tu cuenta, sin compromisos ni penalidades.
+        </div>
+      </div>
+    </div>
+
+    <!-- Pregunta 3 -->
+    <div class="accordion-item">
+      <p-custom class="accordion-header" id="headingThree">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+          ¿Qué pasa si me llega un producto dañado o con faltantes?
+        </button>
+      </h2>
+      <div id="collapseThree" class="accordion-collapse collapse">
+        <div class="accordion-body">
+          Escribinos dentro de los 5 días de recibido y lo resolvemos. Nuestro equipo de soporte te va a ayudar con reposiciones o soluciones rápidas.
+        </div>
+      </div>
+    </div>
+
+    <!-- Pregunta 4 -->
+    <div class="accordion-item">
+      <p-custom class="accordion-header" id="headingFour">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour">
+          ¿Puedo regalar una suscripción a otra persona?
+        </button>
+      </h2>
+      <div id="collapseFour" class="accordion-collapse collapse">
+        <div class="accordion-body">
+          Sí, podés regalar una o varias cajas. Solo tenés que elegir la opción de “regalar” al momento de la compra y completar los datos del destinatario.
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+<!-- /FAQS -->
+
+<!-- SECCIÓN A: Texto centrado sin imagen -->
+<section class="corte section-spacing text-center">
+  <div class="container">
+  <h2 class="h2-custom-corte text-white">TODO LO QUE AMÁS,<br>EN UNA SOLA CAJA</h2>
+    <img src="assets/marcas.png" alt="Marcas" class="mt-4 img-fluid" style="max-width: 400px;">
+  </div>
+</section>
+
+<!-- CONTACT FORM: Formulario de contacto -->
+<section id=contacto class="contacto-section">
+  <div class="container text-center">
+  <h2 class="h2-custom text-white">¿TENÉS ALGUNA DUDA? <span class="text-primary">¡CONTACTANOS!</span></h2>
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <form>
+        <div class="mb-3">
+          <input type="text" class="form-control" placeholder="Nombre y apellido">
+        </div>
+        <div class="mb-3">
+          <input type="email" class="form-control" placeholder="Correo electrónico">
+        </div>
+        <div class="mb-3">
+          <textarea class="form-control" rows="4" placeholder="Mensaje"></textarea>
+        </div>
+        <button type="submit" class="btn btn-dark">ENVIAR</button>
+      </form>
+    </div>
+    </div>
+  </div>
+</section>
+<!-- /CONTACT FORM -->
+
+<!-- FOOTER: Pie de página -->
+<footer class="text-center py-4">
+  <div class="container">
+    <p class="p-white">© 2025 Colecclub. Todos los derechos reservados.<br>Nicolás Mastrostefano - Diseño Gráfico 3, Cátedra Belluccia - Comisión 1</p>
+  </div>
+</footer>
+<!-- /FOOTER -->
+
+<!-- Bootstrap Bundle JS (incluye Popper) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+
+<!-- Script personalizado para cambiar el navbar al hacer scroll -->
+<script>
+window.addEventListener('scroll', function() {
+  const navbar = document.querySelector('.navbar');
+  navbar.classList.toggle('scrolled', window.scrollY > 50);
+});
+</script>
+
+<!-- Scripts adicionales -->
+<script src="scripts.js"></script>
+</body>
+</html>
