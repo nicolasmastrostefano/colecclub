@@ -635,7 +635,7 @@ img.rounded-circle {
 /* MEDIA QUERIES */
 /* ============================== */
 
-@media (max-width: 375px) {
+@media (max-width: 430px) {
   .legendary-section {
     background-image: url(assets/detalle-hero-mobile.jpg) !important;
     background-size: 100%;
