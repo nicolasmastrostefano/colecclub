@@ -47,23 +47,28 @@
 
 <!-- HERO: Sección de portada con llamado a la acción -->
 <section class="hero-section d-flex align-items-center">
-  <div class="container">
+  <div class="container container-hero">
     <div class="row align-items-center">
-      <!-- Texto principal -->
-      <div class="col-lg-6">
-        <h1 class="h1-custom">
+      
+      <!-- Imagen: primero en mobile, segundo en desktop -->
+      <div class="col-lg-6 order-1 order-lg-2 text-center">
+        <img src="assets/hero.png" class="img-fluid img-rounded" alt="Imagen Hero">
+      </div>
+
+      <!-- Texto: segundo en mobile, primero en desktop -->
+      <div class="col-lg-6 order-2 order-lg-1">
+        <h1 class="h1-custom text-lg-start">
           <span class="text-primary">LA CULTURA POP,</span><br>
           <span class="text-white">AL ALCANCE DE TU MANO</span>
         </h1>
-        <p class="p-white">Suscribite a Colecclub y recibí todos los meses tus productos favoritos de la cultura pop. <b>¡Viví la emoción de coleccionar!</b></p>
-        <div class="d-flex gap-3 mt-4">
+        <p class="p-white text-lg-start">
+          Suscribite a Colecclub y recibí todos los meses tus productos favoritos de la cultura pop. <b>¡Viví la emoción de coleccionar!</b>
+        </p>
+        <div class="d-flex justify-content-start gap-3 mt-4">
           <a href="detalle.html" class="btn btn-dark">SUSCRIBITE AHORA</a>
         </div>
       </div>
-      <!-- Imagen destacada -->
-      <div class="col-lg-6 text-center">
-        <img src="assets/hero.png" class="img-fluid img-rounded" alt="Imagen Hero">
-      </div>
+
     </div>
   </div>
 </section>
@@ -131,7 +136,7 @@
 
 <!-- ¿QUÉ CONTIENEN NUESTRAS CAJAS? -->
 <section class="contenido-bg">
-  <div class="container text-center">
+  <div class="container text-center container-contenido">
   <h2 class="h2-custom text-white">¿QUÉ CONTIENEN NUESTRAS <span class="text-primary">CAJAS</span>?</h2>
   <div class="row">
     <!-- Cada columna es una tarjeta de servicio -->
@@ -171,22 +176,6 @@
   </div>
 </section>
 <!-- ¿QUÉ CONTIENEN NUESTRAS CAJAS? -->
-
-<!-- SECCIÓN C: Texto izquierda, imagen derecha -->
-<section class="section-spacing container">
-  <div class="row align-items-center">
-    <!-- Columna de texto -->
-    <div class="col-lg-6">
-      <h2 class="h2-custom">CONECTÁ CON <span class="text-primary">GEEKSWAP</span></h2>
-      <p class="p-custom">¿Te tocó algo repetido? <strong>GeekSwap</strong> es nuestro sistema exclusivo para que puedas intercambiar ítems con otros miembros del club y completar tu colección. Subí lo que tenés, buscá lo que querés y conectá con otros fans. <strong>Disponible para todos los planes de suscripción.</strong></p>
-      <a href="#" class="btn btn-primary mt-3">CONOCÉ MÁS</a>
-    </div>
-    <!-- Columna de imagen -->
-    <div class="col-lg-6 text-center mt-4 mt-lg-0">
-      <img src="assets/geekswap.png" class="img-fluid img-rounded" alt="Imagen ilustrativa">
-    </div>
-  </div>
-</section>
 
 <!-- PLANES DE SUSCRIPCIÓN: Sección con 3 opciones destacadas -->
 <section id=experiencias class="experiencias-bg section-spacing text-center">
@@ -282,6 +271,22 @@
 </section>
 <!-- /PLANES DE SUSCRIPCIÓN -->
 
+<!-- SECCIÓN C: Texto izquierda, imagen derecha -->
+<section class="geekswap section-spacing container">
+  <div class="row align-items-center">
+    <!-- Columna de texto -->
+    <div class="col-lg-6">
+      <h2 class="h2-custom">CONECTÁ CON <span class="text-primary">GEEKSWAP</span></h2>
+      <p class="p-custom">¿Te tocó algo repetido? <strong>GeekSwap</strong> es nuestro sistema exclusivo para que puedas intercambiar ítems con otros miembros del club y completar tu colección. Subí lo que tenés, buscá lo que querés y conectá con otros fans. <strong>Disponible para todos los planes de suscripción.</strong></p>
+      <a href="#" class="btn btn-primary mt-3">CONOCÉ MÁS</a>
+    </div>
+    <!-- Columna de imagen -->
+    <div class="col-lg-6 text-center mt-4 mt-lg-0">
+      <img src="assets/geekswap.png" class="img-fluid img-rounded" alt="Imagen ilustrativa">
+    </div>
+  </div>
+</section>
+
 <!-- FAQS: Preguntas frecuentes -->
 <section class="section-spacing container text-center">
   <h2 class="h2-custom">PREGUNTAS <span class="text-primary">FRECUENTES</span></h2>
@@ -351,7 +356,7 @@
 <section class="corte section-spacing text-center">
   <div class="container">
   <h2 class="h2-custom-corte text-white">TODO LO QUE AMÁS,<br>EN UNA SOLA CAJA</h2>
-    <img src="assets/marcas.png" alt="Marcas" class="mt-4 img-fluid" style="max-width: 400px;">
+    <img src="assets/marcas.png" alt="Marcas" class="mt-4 img-fluid marcas" style="max-width: 400px;">
   </div>
 </section>
 
@@ -380,9 +385,40 @@
 <!-- /CONTACT FORM -->
 
 <!-- FOOTER: Pie de página -->
-<footer class="text-center py-4">
+<footer class="py-5">
   <div class="container">
-    <p class="p-white">© 2025 Colecclub. Todos los derechos reservados.<br>Nicolás Mastrostefano - Diseño Gráfico 3, Cátedra Belluccia - Comisión 1</p>
+    <div class="row gy-4 align-items-center">
+      <!-- Logo tipográfico (igual al navbar) -->
+      <div class="col-12 col-md-4 text-center text-md-start">
+        <a class="navbar-brand gothic fs-3" href="#">
+          COLEC<span class="text-white">CLUB</span>
+        </a>
+      </div>
+
+      <!-- Menú / Enlaces -->
+      <div class="col-12 col-md-4 text-center">
+        <ul class="list-unstyled mb-0">
+          <li><a href="#inicio" class="text-white text-decoration-none">Inicio</a></li>
+          <li><a href="#nosotros" class="text-white text-decoration-none">Nosotros</a></li>
+          <li><a href="#experiencias" class="text-white text-decoration-none">Experiencias</a></li>
+          <li><a href="#contacto" class="text-white text-decoration-none">Contacto</a></li>
+        </ul>
+      </div>
+
+      <!-- Redes Sociales -->
+      <div class="col-12 col-md-4 text-center text-md-end">
+        <a href="#" class="text-white me-3"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="text-white me-3"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="text-white"><i class="bi bi-linkedin"></i></a>
+      </div>
+    </div>
+
+    <!-- Línea inferior -->
+    <div class="row mt-4">
+      <div class="col text-center">
+        <p class="mb-0 text-white-50">&copy; 2025 Colecclub</span>. Todos los derechos reservados.<br>Nicolás Mastrostefano - Diseño Gráfico 3, Cátedra Belluccia - Comisión 1</p>
+      </div>
+    </div>
   </div>
 </footer>
 <!-- /FOOTER -->

@@ -116,7 +116,7 @@ p {
   background-size: cover;
   background-position: left center;
   background-repeat: no-repeat;
-  min-height: 550px;
+  min-height: 650px;
   position: relative;
   padding: 100px 0;
   display: flex;
@@ -205,7 +205,7 @@ section h2 {
   background-size: 100% auto;
   padding-top: 310px;
   padding-bottom: 290px;
-  z-index: 1;
+  z-index: 2;
   overflow: visible;
 }
 
@@ -217,6 +217,23 @@ section h2 {
   background-position: center;
   z-index: 1;
   overflow: visible;
+  margin-top: -230px;
+  padding-top: 250px !important;
+}
+
+.experiencias2-bg {
+  width: 100%;
+  position: relative;
+  background-image: url('assets/bg-experiencias.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 1;
+  overflow: visible;
+  padding-bottom: 160px !important;
+}
+
+.geekswap {
+  padding-bottom: 0px !important;
 }
 
 .contacto-section {
@@ -363,6 +380,11 @@ section h2 {
   min-height: 800px;
 }
 
+.beneficios {
+  padding-top: 50px !important;
+  padding-bottom: 50px !important;
+}
+
 
 /* 7. TESTIMONIOS */
 .blockquote {
@@ -437,10 +459,6 @@ img.rounded-circle {
 .container .row img:hover {
   transform: scale(1.05);
   box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
-}
-
-.testimonios {
-  padding-bottom: 190px !important;
 }
 
 .testimonial-card {
@@ -617,6 +635,21 @@ img.rounded-circle {
 /* MEDIA QUERIES */
 /* ============================== */
 
+@media (max-width: 375px) {
+  .legendary-section {
+    background-image: url(assets/detalle-hero-mobile.jpg) !important;
+    background-size: 100%;
+    background-position: center top;
+    background-repeat: no-repeat;
+  }
+
+  .justify-content-end {
+    justify-content: center !important;
+    padding-top: 50px !important;
+  }
+
+  }
+
 @media (max-width: 768px) {
   h1 {
     font-size: 2.5rem;
@@ -628,11 +661,75 @@ img.rounded-circle {
     background-size: cover;
     background-position: bottom center;
   }
+
+    .container-hero {
+      padding-bottom: 40px;
+    }
     .contenido-bg {
-    background-size: cover; /* para que no quede demasiado chica en mobile */
-    padding-top: 200px;
-    padding-bottom: 200px;
+    background-size: cover;
   }
+
+    .container-contenido {
+      margin-top: 140px;
+  }
+
+    .experiencias-bg {
+      background-size: cover;
+  }
+
+    .geekswap .row {
+      flex-direction: column-reverse;
+    }
+
+        .geekswap h2 {
+      margin-top: 50px;
+    }
+
+  .legendary-section {
+    background-image: url(assets/detalle-hero-tablet.jpg);
+    background-position: center top 0px;
+    background-size: 100%;
+  }
+
+  .legendary-content {
+    padding-top: 180px;
+  }
+
+  .justify-content-end {
+    justify-content: center !important;
+    padding-top: 400px;
+  }
+
+    .beneficios .row {
+      flex-direction: column-reverse;
+    }
+
+    .beneficios h2 {
+      margin-top: 50px;
+    }
+
+    .contacto-section {
+      background-size: cover;
+      background-position: center top;
+      background-repeat: no-repeat;
+      margin-top: -65px;
+      padding-bottom: 50px;
+    }
+
+    .contacto-section::before {
+      background-size: initial;
+      position: absolute;
+      top: -90px;
+    }
+
+.h2-custom-corte {
+  font-size: 5rem;
+}
+
+.marcas {
+  max-width: 300px !important;
+}
+
 }
 
 @media screen and (max-width: 992px) {
@@ -651,4 +748,5 @@ img.rounded-circle {
   .masonry__container {
     column-count: 1;
   }
+
 }
